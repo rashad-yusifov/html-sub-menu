@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+}
+
+
+.left-box{
+    width: 300px;
+    height: 100vh;
+    background-color: purple;
+}
+.inner-menu{
+    height: 100%;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+}
+
+.right-icon{
+    margin-left: auto;
+    font-size: 18px;
+    position: relative;
+    font-size: 24px;
+    color: white;
+}
+
+.inner-menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+
+.inner-menu ul li{
+    margin-bottom: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+}
+.inner-menu ul li .head-box:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.head-box{
+    width: 100%;
+    transition: 0.3s;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-bottom: 16px;
+    position: relative;
+}
+.head-box .head-icon{
+    margin-right: 24px;
+    font-size: 24px;
+    color: white;
+}
+
+.head-text{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+.icon-body{
+    display: none;
+    position: relative;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.icon-body .head{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    justify-content: space-between;
+
+}
+.icon-body .icon{
+    width:48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+}
+.icon-body .icon i:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.icon-body .icon.active{
+    background-color: white;
+    color: black;
+}
+.sub-item{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid white;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    padding-top: 16px;
+}
+.sub-item a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+
+}
+.sub-item:hover{
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+.inner-menu ul li.active .icon-body{
+    display: block;
+}
+.sub-menu{
+    display: none;
+}
+.sub-menu.active{
+    display: block;
+}
+
+
+.inner-menu ul li.active .right-icon{
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
